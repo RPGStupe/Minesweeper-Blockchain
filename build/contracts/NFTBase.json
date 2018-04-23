@@ -1,0 +1,256 @@
+{
+  "contractName": "NFTBase",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "total",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.17;\r\n\r\n/// @title Interface for a Minesweeper Token\r\n/// @author Fabian Iwanecki\r\n/// Every minesweeper game is represented by a NFT.\r\ncontract NFTBase {\r\n    function totalSupply() public view returns (uint256 total);\r\n    function ownerOf(uint256 _tokenId) public view returns (address owner);\r\n\r\n    // Optional\r\n    // function name() public view returns (string name);\r\n    // function symbol() public view returns (string symbol);\r\n    // function tokenOfOwnerByIndex(address _owner, uint256 _index) external view returns (uint256 tokenId);\r\n    // function tokenMetadata(uint256 _tokenId) public view returns (string infoUrl);\r\n}",
+  "sourcePath": "C:\\Users\\Fabian\\Desktop\\Minesweeper\\contracts\\NFTBase.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Users/Fabian/Desktop/Minesweeper/contracts/NFTBase.sol",
+      "exportedSymbols": {
+        "NFTBase": [
+          580
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 567,
+        "name": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "@title Interface for a Minesweeper Token\r\n @author Fabian Iwanecki\r\n Every minesweeper game is represented by a NFT.\r",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            580
+          ],
+          "name": "NFTBase",
+          "scope": 581
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "totalSupply",
+              "payable": false,
+              "scope": 580,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 568,
+                "name": "ParameterList",
+                "src": "200:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "total",
+                      "scope": 572,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 569,
+                        "name": "ElementaryTypeName",
+                        "src": "224:7:4"
+                      }
+                    ],
+                    "id": 570,
+                    "name": "VariableDeclaration",
+                    "src": "224:13:4"
+                  }
+                ],
+                "id": 571,
+                "name": "ParameterList",
+                "src": "223:15:4"
+              }
+            ],
+            "id": 572,
+            "name": "FunctionDefinition",
+            "src": "180:59:4"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "constant": true,
+              "implemented": false,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "ownerOf",
+              "payable": false,
+              "scope": 580,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_tokenId",
+                      "scope": 579,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 573,
+                        "name": "ElementaryTypeName",
+                        "src": "262:7:4"
+                      }
+                    ],
+                    "id": 574,
+                    "name": "VariableDeclaration",
+                    "src": "262:16:4"
+                  }
+                ],
+                "id": 575,
+                "name": "ParameterList",
+                "src": "261:18:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "owner",
+                      "scope": 579,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 576,
+                        "name": "ElementaryTypeName",
+                        "src": "301:7:4"
+                      }
+                    ],
+                    "id": 577,
+                    "name": "VariableDeclaration",
+                    "src": "301:13:4"
+                  }
+                ],
+                "id": 578,
+                "name": "ParameterList",
+                "src": "300:15:4"
+              }
+            ],
+            "id": 579,
+            "name": "FunctionDefinition",
+            "src": "245:71:4"
+          }
+        ],
+        "id": 580,
+        "name": "ContractDefinition",
+        "src": "156:501:4"
+      }
+    ],
+    "id": 581,
+    "name": "SourceUnit",
+    "src": "0:657:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-04-23T21:25:12.243Z"
+}
