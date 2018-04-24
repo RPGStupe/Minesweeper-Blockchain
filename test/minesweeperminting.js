@@ -31,7 +31,7 @@ contract("MinesweeperCore", function(accounts) {
         afterEach(unwatch);
 
         it("should create minesweeper game", async function() {
-            await minesweeperCore.createMinesweeperGame(40, 1);
+            await minesweeperCore.createMinesweeperGame(4, 4);
             const game = await minesweeperCore.getGame(0);
             console.log(game)
         });
@@ -83,6 +83,32 @@ contract("MinesweeperCore", function(accounts) {
             await minesweeperCore.openTile(0, 0, 0);
             const tileStatusOpenedBomb = await minesweeperCore.getTile(0, 0, 0);
             console.log(tileStatusOpenedBomb);
+        });
+    });
+
+    describe("playFullGame:", async function() {
+        beforeEach(deploy);
+        afterEach(unwatch);
+
+        it("should win the game", async function() {
+            await minesweeperCore.createMinesweeperGame(4, 4);
+            const game = await minesweeperCore.getGame(0);
+            await minesweeperCore.openTile(0, 0, 0);
+            await minesweeperCore.openTile(1, 0, 0);
+            await minesweeperCore.openTile(2, 0, 0);
+            await minesweeperCore.flagTile(3, 0, 0);
+            await minesweeperCore.openTile(0, 1, 0);
+            await minesweeperCore.openTile(1, 1, 0);
+            await minesweeperCore.flagTile(2, 1, 0);
+            await minesweeperCore.openTile(3, 1, 0);
+            await minesweeperCore.openTile(0, 2, 0);
+            await minesweeperCore.openTile(1, 2, 0);
+            await minesweeperCore.flagTile(2, 2, 0);
+            await minesweeperCore.flagTile(3, 2, 0);
+            await minesweeperCore.openTile(0, 3, 0);
+            await minesweeperCore.openTile(1, 3, 0);
+            await minesweeperCore.openTile(2, 3, 0);
+            await minesweeperCore.openTile(3, 3, 0);
         });
     });
 });

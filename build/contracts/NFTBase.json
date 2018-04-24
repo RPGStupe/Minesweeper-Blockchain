@@ -46,7 +46,7 @@
       "absolutePath": "/C/Users/Fabian/Desktop/Minesweeper/contracts/NFTBase.sol",
       "exportedSymbols": {
         "NFTBase": [
-          580
+          901
         ]
       }
     },
@@ -60,7 +60,7 @@
             ".17"
           ]
         },
-        "id": 567,
+        "id": 888,
         "name": "PragmaDirective",
         "src": "0:24:4"
       },
@@ -76,10 +76,10 @@
           "documentation": "@title Interface for a Minesweeper Token\r\n @author Fabian Iwanecki\r\n Every minesweeper game is represented by a NFT.\r",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            580
+            901
           ],
           "name": "NFTBase",
-          "scope": 581
+          "scope": 902
         },
         "children": [
           {
@@ -93,7 +93,7 @@
               ],
               "name": "totalSupply",
               "payable": false,
-              "scope": 580,
+              "scope": 901,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -106,7 +106,7 @@
                   ]
                 },
                 "children": [],
-                "id": 568,
+                "id": 889,
                 "name": "ParameterList",
                 "src": "200:2:4"
               },
@@ -116,7 +116,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "total",
-                      "scope": 572,
+                      "scope": 893,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -129,22 +129,22 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 569,
+                        "id": 890,
                         "name": "ElementaryTypeName",
                         "src": "224:7:4"
                       }
                     ],
-                    "id": 570,
+                    "id": 891,
                     "name": "VariableDeclaration",
                     "src": "224:13:4"
                   }
                 ],
-                "id": 571,
+                "id": 892,
                 "name": "ParameterList",
                 "src": "223:15:4"
               }
             ],
-            "id": 572,
+            "id": 893,
             "name": "FunctionDefinition",
             "src": "180:59:4"
           },
@@ -159,7 +159,7 @@
               ],
               "name": "ownerOf",
               "payable": false,
-              "scope": 580,
+              "scope": 901,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -171,7 +171,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_tokenId",
-                      "scope": 579,
+                      "scope": 900,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -184,17 +184,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 573,
+                        "id": 894,
                         "name": "ElementaryTypeName",
                         "src": "262:7:4"
                       }
                     ],
-                    "id": 574,
+                    "id": 895,
                     "name": "VariableDeclaration",
                     "src": "262:16:4"
                   }
                 ],
-                "id": 575,
+                "id": 896,
                 "name": "ParameterList",
                 "src": "261:18:4"
               },
@@ -204,7 +204,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "owner",
-                      "scope": 579,
+                      "scope": 900,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -217,32 +217,32 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 576,
+                        "id": 897,
                         "name": "ElementaryTypeName",
                         "src": "301:7:4"
                       }
                     ],
-                    "id": 577,
+                    "id": 898,
                     "name": "VariableDeclaration",
                     "src": "301:13:4"
                   }
                 ],
-                "id": 578,
+                "id": 899,
                 "name": "ParameterList",
                 "src": "300:15:4"
               }
             ],
-            "id": 579,
+            "id": 900,
             "name": "FunctionDefinition",
             "src": "245:71:4"
           }
         ],
-        "id": 580,
+        "id": 901,
         "name": "ContractDefinition",
         "src": "156:501:4"
       }
     ],
-    "id": 581,
+    "id": 902,
     "name": "SourceUnit",
     "src": "0:657:4"
   },
@@ -252,5 +252,5 @@
   },
   "networks": {},
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-04-23T21:25:12.243Z"
+  "updatedAt": "2018-04-24T14:16:45.999Z"
 }

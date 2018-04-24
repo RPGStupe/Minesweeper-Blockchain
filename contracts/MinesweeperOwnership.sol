@@ -17,6 +17,10 @@ contract MinesweeperOwnership is MinesweeperModel, NFTBase {
         return tokenIdToOwner[_tokenId] == _claimant;
     }
 
+    function _locked(uint256 _tokenId) internal view returns (bool) {
+        return playfields[_tokenId].locked;
+    }
+
     function ownerOf(uint256 _tokenId) public view returns (address owner) {
         owner = tokenIdToOwner[_tokenId];
 
